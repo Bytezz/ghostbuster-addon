@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Ghostbuster",
+  "version": "0.5",
+
+  "description": "Avoid screen burn-in, image persistence and ghost image with a css animation wich move periodically the body of web pages.",
+
+  "icons": {
+    "48": "icons/48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
