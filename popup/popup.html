@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+	<div id="header">
+		<img id="logo" src="../icons/48.png" />
+		<h4>Ghostbuster</h4>
+		<input id="togglebtn" class="button" type="button" value="On/Off" disabled/>
+	</div>
+	<div id="listTypeContainer">
+		<div class="button">
+			<input type="radio" name="listType" id="blacklist" />
+			<label for="blacklist">Blacklist</label>
+		</div>
+		<div class="button">
+			<input type="radio" name="listType" id="whitelist" />
+			<label for="whitelist">Whitelist</label>
+		</div>
+	</div>
+	<div id="content">
+		<input id="domain" type="text" placeholder="domain" readonly/>
+		<input id="listbtn" class="button" type="button" value="Add to list" disabled/>
+	</div>
+	<script src="popup.js"></script>
+</body>
+</html>
